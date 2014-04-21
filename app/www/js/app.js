@@ -38,7 +38,9 @@
     function route() {
         var hash = window.location.hash;
         if (!hash) {
-            slider.slidePage(new HomeView(adapter, homeTpl, employeeLiTpl).render().el);
+            var view = new HomeView(adapter, homeTpl, employeeLiTpl);
+            slider.slidePage(view.render().el);
+            view.findByName();
             return;
         }
         var match = hash.match(detailsURL);
