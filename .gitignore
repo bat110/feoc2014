@@ -4,4 +4,5 @@ app/platforms/android/CordovaLib/ant-build/
 app/platforms/android/CordovaLib/ant-gen/
 app/platforms/android/ant-build/
 app/platforms/android/ant-gen/
-app/platforms/android/assets/www/plugins/
+app/platforms/android/assets/www
+.DS_Store
