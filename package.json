@@ -32,6 +32,7 @@
     "test": "gulp test"
   },
   "devDependencies": {
+    "cordova": "~3.4.1"
   }
 }
 
