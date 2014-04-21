@@ -1,3 +1,13 @@
+.scroller {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 141px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 .back-button {
     position: absolute;
     top: 10px;
