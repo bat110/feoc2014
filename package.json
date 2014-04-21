@@ -1,0 +1,37 @@
+{
+  "name": "feoc2014",
+  "description": "Front End Ops Conference talk",
+  "tags": [
+    "automation",
+    "javascript",
+    "webdriver",
+    "selenium",
+    "wd",
+    "android"
+  ],
+  "version": "0.0.1",
+  "author": "jlipps@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlipps/feoc2014.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlipps/feoc2014/issues"
+  },
+  "engines": [
+    "node"
+  ],
+  "main": "./lib/main.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "yiewd": "~0.4.5"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+  }
+}
+
