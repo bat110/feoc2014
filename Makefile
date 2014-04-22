@@ -1,3 +1,5 @@
+DEFAULT: build
+
 build:
 	cd app && ../node_modules/.bin/cordova build android
 
@@ -10,6 +12,12 @@ run: install
 		-c android.intent.category.LAUNCHER -f 0x10200000 \
 		-n com.example.sampleapp/.SampleApp
 
-.PHONY: build \
+test:
+	./node_modules/mo_ocha/node_modules/.bin/mocha --harmony -R spec \
+		-t 60000 test/specs.js
+
+.PHONY: DEFAULT \
+	build \
 	install \
-	run
+	run \
+	test
