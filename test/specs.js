@@ -12,7 +12,8 @@ var yiewd = require('yiewd')
   , it = mo_Ocha.it
   , beforeEach = mo_Ocha.beforeEach
   , afterEach = mo_Ocha.afterEach
-  , SWIPE_MS = 0.7;
+  , SWIPE_MS = 0.7
+  , DEMO_HOST = process.env.DEMO_HOST || "localhost";
 
 require('should');
 
@@ -64,7 +65,7 @@ describe('Sample employee directory app', function () {
   });
 
   it('should perform well', function* () {
-    yield driver.get("http://10.35.4.147:8080/index.html");
+    yield driver.get("http://" + DEMO_HOST + ":8080/index.html");
     var allLogs = [];
     var perfLogs = yield driver.log('performance');
     allLogs = allLogs.concat(perfLogs);
