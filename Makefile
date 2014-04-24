@@ -14,7 +14,7 @@ run: install
 
 test:
 	./node_modules/mo_ocha/node_modules/.bin/mocha --harmony -R spec \
-		-t 60000 test/specs.js
+		-t 600000 test/specs.js
 
 .PHONY: DEFAULT \
 	build \
